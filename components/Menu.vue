@@ -1,7 +1,7 @@
 <template>
   <nav class="py-5 bg-black border-b">
     <ul class="flex justify-around items-center">
-      <div>
+      <div class="hidden sm:inline-block">
         <NuxtLink to="/">ICON</NuxtLink>
       </div>
 
@@ -9,7 +9,7 @@
         <li v-for="link in links" :key="link.id">
           <NuxtLink
             :to="link.to"
-            class="py-2 px-4 rounded items-center hover:bg-gray-600 transition duration-400"
+            class="py-2 px-4 text-xs sm:text-sm md:text-xl rounded items-center hover:bg-gray-600 transition duration-400"
           >
             {{ link.name }}
           </NuxtLink>
