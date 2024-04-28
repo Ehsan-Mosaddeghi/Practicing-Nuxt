@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   devtools: { enabled: true },
-  extends: ["@nuxt/ui-pro"],
-  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@pinia/nuxt"],
+  modules: [
+    "@nuxt/ui",
+    "@nuxtjs/tailwindcss",
+    "@pinia/nuxt",
+    "@nuxtjs/color-mode",
+  ],
+  colorMode: {
+    classSuffix: "",
+  },
 });

@@ -11,6 +11,12 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+  pageTransition: {
+    name: "shop",
+  },
+});
+</script>
 
 <style></style>

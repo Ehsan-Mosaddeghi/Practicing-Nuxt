@@ -28,4 +28,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+body {
+  @apply bg-gray-400 dark:bg-gray-900 text-gray-700 dark:text-gray-300;
+}
 </style>

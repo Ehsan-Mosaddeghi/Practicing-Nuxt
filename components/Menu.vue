@@ -1,19 +1,27 @@
 <template>
-  <nav class="py-5 bg-black border-b">
+  <nav class="py-5 bg-zinc-700 border-b">
     <ul class="flex justify-around items-center">
       <div class="hidden sm:inline-block">
-        <NuxtLink to="/">ICON</NuxtLink>
+        <NuxtLink to="/" class="text-white font-bold decoration-transparent"
+          >ICON</NuxtLink
+        >
       </div>
 
       <div class="flex justify-evenly w-3/5">
         <li v-for="link in links" :key="link.id">
           <NuxtLink
             :to="link.to"
-            class="py-2 px-4 text-xs sm:text-sm md:text-xl rounded items-center hover:bg-gray-600 transition duration-400"
+            class="py-2 px-4 text-xs sm:text-sm md:text-xl text-white rounded items-center hover:bg-gray-600 transition duration-400"
           >
             {{ link.name }}
           </NuxtLink>
         </li>
+      </div>
+
+      <div class="hidden sm:inline-block">
+        <ClientOnly>
+          <ColorModeSelector />
+        </ClientOnly>
       </div>
     </ul>
   </nav>
