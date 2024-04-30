@@ -1,13 +1,13 @@
 <template>
-  <nav class="py-5 bg-zinc-700 border-b">
+  <nav class="py-5 bg-zinc-700 border-b fixed w-full z-10">
     <ul class="flex justify-around items-center">
       <div class="hidden sm:inline-block">
         <NuxtLink to="/" class="text-white font-bold decoration-transparent"
-          >ICON</NuxtLink
+          >Nuxt Practice</NuxtLink
         >
       </div>
 
-      <div class="flex justify-evenly w-3/5">
+      <div class="flex justify-evenly space-x-4">
         <li v-for="link in links" :key="link.id">
           <NuxtLink
             :to="link.to"
@@ -31,7 +31,7 @@
 const links = useState("links", () => [
   { name: "Home", to: "/", id: 1 },
   { name: "Shop", to: "/shop", id: 2 },
-  { name: "Home", to: "/", id: 3 },
+  { name: "About me", to: "/about", id: 3 },
   { name: "Home", to: "/", id: 4 },
 ]);
 </script>

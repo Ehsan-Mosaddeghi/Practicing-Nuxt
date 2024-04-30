@@ -23,6 +23,6 @@
 .shop-enter-from,
 .shop-leave-to {
   opacity: 0;
-  transform: translateY(3rem);
+  transform: translateY(-3rem);
 }
 </style>
