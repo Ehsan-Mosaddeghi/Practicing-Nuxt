@@ -25,6 +25,12 @@
       </div>
     </ul>
   </nav>
+
+  <div class="fixed flex justify-end w-full top-20 right-4 sm:hidden">
+    <ClientOnly>
+      <ColorModeSelector />
+    </ClientOnly>
+  </div>
 </template>
 
 <script setup>
@@ -32,7 +38,7 @@ const links = useState("links", () => [
   { name: "Home", to: "/", id: 1 },
   { name: "Shop", to: "/shop", id: 2 },
   { name: "About me", to: "/about", id: 3 },
-  { name: "Home", to: "/", id: 4 },
+  { name: "Todo", to: "/todo", id: 4 },
 ]);
 </script>
 

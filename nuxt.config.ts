@@ -6,10 +6,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     "@nuxt/ui",
-    "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "@nuxtjs/color-mode",
+    "@nuxtjs/tailwindcss",
   ],
+
   colorMode: {
     classSuffix: "",
   },

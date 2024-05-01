@@ -17,7 +17,7 @@
 
 <script setup></script>
 
-<style>
+<style scoped>
 .image {
   animation: image-animation 2s ease-in-out infinite alternate;
 }
