@@ -44,6 +44,7 @@ const links = useState("links", () => [
 
 <style scoped>
 .router-link-active {
-  @apply overline  decoration-double;
+  text-decoration-style: double;
+  text-decoration-line: overline;
 }
 </style>

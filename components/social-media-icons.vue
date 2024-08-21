@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-6 ml-5">
-    <a href="https://t.me/EhsanHpy" class="link">
+    <a href="https://t.me/EhsanHpy" class="link dark:hover:text-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -16,7 +16,7 @@
 
     <a
       href="https://www.instagram.com/ehsan.hpy?igsh=MWNtcHZtZW5jcWlnbw=="
-      class="link"
+      class="link dark:hover:text-white"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,10 @@
       </svg>
     </a>
 
-    <a href="https://discordapp.com/users/814819452309733406" class="link">
+    <a
+      href="https://discordapp.com/users/814819452309733406"
+      class="link dark:hover:text-white"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -46,7 +49,10 @@
     </a>
 
     <div class="flex flex-col relative">
-      <a @click="copyToClipboard" class="link cursor-pointer">
+      <a
+        @click="copyToClipboard"
+        class="link dark:hover:text-white cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
@@ -87,7 +93,10 @@ const showCopied = useState("copy", () => false);
 
 <style scoped>
 .link {
-  @apply text-2xl hover:text-black dark:hover:text-white;
+  font-size: 1.5rem;
+}
+.link:hover {
+  color: black;
 }
 
 .v-enter-active,

@@ -21,7 +21,7 @@ useHead({
 });
 </script>
 
-<style>
+<style lang="postcss">
 body {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
